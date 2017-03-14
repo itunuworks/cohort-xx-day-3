@@ -1,0 +1,25 @@
+{
+  "name": "cohort-xx-day-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apps/andelabs.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jasmine tests/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itunuworks/cohort-xx-day-3.git"
+  },
+  "author": "Itunuloluwa Fatoki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itunuworks/cohort-xx-day-3/issues"
+  },
+  "homepage": "https://github.com/itunuworks/cohort-xx-day-3#readme",
+  "dependencies": {
+    "jasmine": "^2.5.3"
+  }
+}
