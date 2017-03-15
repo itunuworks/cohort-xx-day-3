@@ -67,4 +67,52 @@ Array.prototype.search = function(number){
 	return returnValue;
 }
 
-module.exports = {Array}
+function findMissing(arr1, arr2){
+	var big = arr2;
+  	var small = arr1;
+    var r = big.length;
+    var l = 0;
+    
+    arr1.sort(numericalSortFunction);
+    arr2.sort(numericalSortFunction);
+    
+    if (arr1.length > arr2.length){
+        big = arr1;
+        small = arr2;
+    }
+
+    if (arr1.length === arr2.length & arr1.length === 0){
+    	return 0;
+    }
+    
+    if (big[l] !== small[l]){
+        return l;
+    }
+    else if (big[r-1] === small[r-1]){
+        return r-1;
+    }
+
+    
+    while(r >= l){
+        var m = Math.floor((r+l)/2);
+        
+        if (big[m] !== small[m]){
+            if (big[m-1] === small[m-1]) {
+                return big[m];
+            }
+            r = m - 1;
+        }
+        else {
+            if (big[m+1] !== small[m+1]){
+                return big[m+1];
+            }
+            l = m + 1;
+        }
+    }
+}
+
+function numericalSortFunction(a, b){
+	a-b;
+}
+
+module.exports = {Array, findMissing}
