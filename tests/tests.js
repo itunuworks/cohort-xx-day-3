@@ -1,5 +1,7 @@
 'use strict';
 
+require('../apps/andelabs.js');
+
 describe('Binary Search to traverse an ordered list, effectively', function() {
   describe('Populate the arrays with valid content', function() {
     
