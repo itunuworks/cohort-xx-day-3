@@ -70,8 +70,8 @@ Array.prototype.search = function(number){
 function findMissing(arr1, arr2){
     var big = arr2;
     var small = arr1;
-    var r = big.length;
-    var l = 0;
+    var high = big.length;
+    var low = 0;
     
     
     if (arr1.length > arr2.length){
@@ -86,28 +86,28 @@ function findMissing(arr1, arr2){
         return 0;
     }
     
-    if (big[l] !== small[l]){
-        return big[l];
+    if (big[low] !== small[low]){
+        return big[low];
     }
-    else if (big[r-1] === small[r-1]){
-        return big[r-1];
+    else if (big[high-1] === small[high-1]){
+        return big[high-1];
     }
 
     
-    while(r >= l){
-        var m = Math.floor((r+l)/2);
+    while(high >= low){
+        var mid = Math.floor((high+low)/2);
         
-        if (big[m] !== small[m]){
-            if (big[m-1] === small[m-1]) {
-                return big[m];
+        if (big[mid] !== small[mid]){
+            if (big[mid-1] === small[mid-1]) {
+                return big[mid];
             }
-            r = m - 1;
+            high = mid - 1;
         }
         else {
-            if (big[m+1] !== small[m+1]){
-                return big[m+1];
+            if (big[mid+1] !== small[mid+1]){
+                return big[mid+1];
             }
-            l = m + 1;
+            low = mid + 1;
         }
     }
 }
