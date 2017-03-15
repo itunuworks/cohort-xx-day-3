@@ -1,6 +1,7 @@
 'use strict';
 
 require('../apps/andelabs.js');
+var findMissing = require('../apps/andelabs.js').findMissing;
 
 describe('Binary Search to traverse an ordered list, effectively', function() {
   describe('Populate the arrays with valid content', function() {
