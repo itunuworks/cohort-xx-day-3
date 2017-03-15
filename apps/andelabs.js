@@ -50,9 +50,11 @@ Array.prototype.search = function(number){
             else {
                 if (this[mid] > number) {
                     high = mid - 1;
+                    low++;
                 }
                 else if (this[mid] < number) {
                     low = mid + 1;
+                    high--;
                 }
                 else {
                     returnValue.index = mid;
