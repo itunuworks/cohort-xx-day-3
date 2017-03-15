@@ -2,7 +2,7 @@
 
 ## About the project
 
-This project contains **5 Andelabs functions** and a **Front End Project** which in my case, is a cloned Google homepage.
+This repository holds my project lab for day 3. It contains 2 function projects including their test cases, dependencies and an HTML Lab. The function projects are `search` (which performs a binary search of a number on an array), it is dependent on three other functions `toTwenty`, `toForty` and `toOneThousand` and `findMissing` function project which takes in as argument, two arrays from which one has elements of the other, short by one. We are to find the missing element. For the HTML/CSS Lab, a simple clone UI is implemented with HTML and CSS.
 
 - toTwenty 
 
@@ -23,6 +23,14 @@ This project contains **5 Andelabs functions** and a **Front End Project** which
   `[2, 3, 4, 8].search(3)` would return `1`
   and 
   `[2, 3, 4, 8].search(12)` would return `-1`
+
+- findMissing
+  
+  - `findMissing(arr1, arr2)` takes in two arguments, both of which are arrays. One of the arrays will have one extra number. What this function does is to return that extra number.
+  For example 
+  `findMissing([2,5,9,3,21], [2,5,9,73,3,21])` would return `73`
+  and 
+  `findMissing([6,3,2,5,23,234,26,4], [6,3,2,5,23,234,26,4,100])` would return `100`.
 
 - Google Homepage clone
 
