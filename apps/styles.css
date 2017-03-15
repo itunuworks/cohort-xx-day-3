@@ -1,0 +1,51 @@
+.fullWidth{
+	width: 100%;
+}
+
+.top20{
+	padding-top: 20px;
+} 
+
+.image{
+	padding-top: 80px;
+}
+
+.textInput{
+	 width: 500px; 
+	 height: 35px;
+}
+
+.footer{
+	bottom: 0px; 
+	width: inherit; 
+	height: 7%; 
+	vertical-align: bottom;
+}
+
+.main{
+	padding: 0;
+	margin: 0; 
+	height: 86%;
+}
+
+html{
+	background-color: white; 
+	height: 100%; 
+	margin: 0px; 
+	padding: 0px"
+}
+
+header{
+	 vertical-align: middle; 
+	 height: 7%;
+}
+
+.uniqueDiv{
+	width:800px;
+	margin: auto; 
+	height: inherit;"
+}
+
+body{
+	height: 97%
+}

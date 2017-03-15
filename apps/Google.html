@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html style="background-color: white; height: 100%; margin: 0%; padding: 0%">
+<html class="fullWidth">
   <head>
     <meta charset="utf-8">
-
     <title>Google</title>
+    <link rel="stylesheet" href="./styles.css">
   </head>
 
   <body>
-    <header>
+    <header class="fullWidth">
       <div align="right">
         <span>
           <a href="#">Gmail</a>
@@ -18,16 +18,18 @@
       </div>
     </header>
     <!-- Here is our page's main content -->
-    <main style="padding: 0; margin: 0">
-      <div align="center" style="width:800px; margin: auto; height: auto;">
-        <form>
-          <input type="Text" name="">
-          <div>
+    <main class="main">
+      <div class="uniqueDiv" align="center">
+        
+        <img class="image" src="googleLogo.png" alt="Smiley face" width="300px">
+        <form class="top20">
+          <input class="textInput" type="Text">
+          <div class="top20">
             <input value="Google Search" type="submit">
             <input value="I'm Feeling Lucky" type="submit">
           </div>
         </form>
-        <div>
+        <div class="top20">
           Google.com.ng offered in:
           <a href="#">Hausa</a>
           <a href="#">Igbo</a>
@@ -37,21 +39,19 @@
       </div>
     </main>
 
-    <footer style="position:absolute; margin-left: 10px; bottom:10px; margin-right: 10px;">
-      <div align="right">
-        <span style="float: left;">
-          <a href="#">Advertising</a>
-          <a href="#">Business</a>
-          <a href="#">About</a>
-        </span>
-        <span>
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Settings</a>
-          <a href="#">Use Google.com</a>
-        </span>
-      </div>
-    </footer>
+    <div class="footer">
+       <span style="float: left;">
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">About</a>
+      </span>
+      <span style="float: right;">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
+        <a href="#">Use Google.com</a>
+      </span>
+    </div>
 
   </body>
 </html>

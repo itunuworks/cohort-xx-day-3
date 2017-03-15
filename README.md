@@ -20,21 +20,28 @@ This repository holds my project lab for day 3. It contains 2 function projects 
 
   - This function is also declared as a prototype of the **Array** Class and takes in one number as argument so that a statement in the form `arr.search(4)` would return the index position of number 4 in that array.
   For example 
+  
   `[2, 3, 4, 8].search(3)` would return `1`
+  
   and 
+  
   `[2, 3, 4, 8].search(12)` would return `-1`
 
 - findMissing
   
   - `findMissing(arr1, arr2)` takes in two arguments, both of which are arrays. One of the arrays will have one extra number. What this function does is to return that extra number.
+  
   For example 
+  
   `findMissing([2,5,9,3,21], [2,5,9,73,3,21])` would return `73`
+  
   and 
+
   `findMissing([6,3,2,5,23,234,26,4], [6,3,2,5,23,234,26,4,100])` would return `100`.
 
 - Google Homepage clone
 
-  - Here, what we have is the clone of the Google homepage, complete with css code.
+  - Here, what we have is the clone of the Google homepage, complete with css code. Files can be found in `apps` folder
 
 ## How to install
 
